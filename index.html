@@ -97,23 +97,45 @@
                 </div>
             </nav>
         </header>
-
-        <div class="body">
-            <div class="past"><a href="">PAST</a></div>
-            <div class="present"><a href="">PRESENT</a></div>
-            <div class="future"><a href="">FUTURE</a></div>
-
-            <div class="desc">
-                <p>
-                    Inspired, at the highest level, by beauty and scientific
-                    research.
-                </p>
+        <div class="scrolling-body y mandatory-scroll-snapping" dir="ltr">
+            <div class="body">
+                <video
+                    id="background-video"
+                    autoplay
+                    loop
+                    muted
+                    poster="https://assets.codepen.io/6093409/river.jpg"
+                >
+                    <source
+                        src="https://www.pagani.com/app/uploads/2022/09/C10_sito_home.mp4"
+                        type="video/mp4"
+                    />
+                </video>
             </div>
-            <div class="signature">
+            <div class="scroll-down"></div>
+            <p class="desc-scroll-down">SCROLL DOWN</p>
+            <div class="body">
                 <img
-                    src="https://www.pagani.com/app/themes/pagani/assets/images/signature-white.png"
-                    alt="pagani-signature"
+                    src="https://www.pagani.com/app/uploads/2016/11/MIN-home-history-2.jpg"
+                    alt=""
+                    id="background-img"
                 />
+                <div class="past"><a href="">PAST</a></div>
+                <div class="present"><a href="">PRESENT</a></div>
+                <div class="future"><a href="">FUTURE</a></div>
+
+                <div class="desc">
+                    <p>
+                        Inspired, at the highest level, by beauty and scientific
+                        research.
+                    </p>
+                </div>
+                <div class="signature">
+                    <img
+                        src="https://www.pagani.com/app/themes/pagani/assets/images/signature-white.png"
+                        alt="pagani-signature"
+                    />
+                </div>
             </div>
         </div>
 
@@ -142,6 +164,12 @@
                     exit_icon.style.display = "block";
                 }
             }
+            // window.addEventListener("wheel", (event) => {
+            //     const scrolled = event.wheelDeltaY;
+            //     if (scrolled > 0) {
+            //         window.location.href = "http://localhost:5500/outro.html";
+            //     }
+            // });
         </script>
     </body>
 </html>
