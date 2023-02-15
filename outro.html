@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Pagani</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="outro.css" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="/img/pagani-logo.png" alt="logo" />
+            </div>
+            <a
+                href="javascript:void(0);"
+                class="icon"
+                id="icon"
+                onclick="myFunction()"
+                ><i class="fa-solid fa-bars"></i
+            ></a>
+            <nav class="nav">
+                <div id="nav-links">
+                    <a
+                        href="javascript:void(0);"
+                        id="icon-exit"
+                        onclick="myFunction()"
+                    >
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="" class="a-link">HOME</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link">HISTORY</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link">HYPERCARS</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link">DEALERS</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link">GUIDED TOURS</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link"
+                                >JOB & STAGE OPPORTUNITIES</a
+                            >
+                        </li>
+                        <li>
+                            <a href="" class="a-link">PRESS ROOM</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link">BOOKSHOP</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link">CALENDARIO PAGANI</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link">PAGANI OFFICINA</a>
+                        </li>
+                        <li>
+                            <a href="" class="a-link">PAGANI STORE</a>
+                        </li>
+                    </ul>
+                    <img
+                        src="/img/pagani-badge.jpeg"
+                        alt=""
+                        class="pagani-badge"
+                    />
+                    <div class="language">
+                        <a href="" id="italy">ITALIANO</a>
+                        <a href="" id="en">ENGLISH</a>
+                    </div>
+                    <div class="social-media">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""
+                            ><i class="fa-brands fa-google-plus-g"></i
+                        ></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="body">
+            <div class="past"><a href="">PAST</a></div>
+            <div class="present"><a href="">PRESENT</a></div>
+            <div class="future"><a href="">FUTURE</a></div>
+
+            <div class="desc">
+                <p>
+                    Inspired, at the highest level, by beauty and scientific
+                    research.
+                </p>
+            </div>
+            <div class="signature">
+                <img
+                    src="https://www.pagani.com/app/themes/pagani/assets/images/signature-white.png"
+                    alt="pagani-signature"
+                />
+            </div>
+        </div>
+
+        <div class="cookies">
+            <img src="/img/pagani-badge.jpeg" alt="" />
+        </div>
+
+        <footer>
+            <p>
+                <span><i class="fa-regular fa-copyright"></i></span>2023 Horacio
+                Pagani S.P.A. - rights reserved - P.IVA 02054560368 - credits
+            </p>
+        </footer>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("nav-links");
+                var exit_icon = document.getElementById("icon-exit");
+                var nav_icon = document.getElementById("icon");
+                if (exit_icon.style.display === "block") {
+                    nav_icon.style.display = "block";
+                    exit_icon.style.display = "none";
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                    nav_icon.style.display = "none";
+                    exit_icon.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
